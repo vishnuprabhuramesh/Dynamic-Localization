@@ -6,8 +6,8 @@ thetap = nextpose(3);
 xl = landmark(1);
 yl = landmark(2);
 
-z = sqrt((xl-xp)^2+(yl-yp)^2);
+r = sqrt((xl-xp)^2+(yl-yp)^2);
 phi = atan2(yl-yp, xl-xp) - thetap;
 
-measured_values = [z, phi];
+measured_values = [r, phi];
 end

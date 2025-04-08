@@ -1,7 +1,7 @@
-function measured_values = sensormeasurement(z_bar, phi_bar, sigma)
+function measured_values = sensormeasurement(r_bar, phi_bar, sigma)
 
-z = normrnd(z_bar, sigma);
+r = normrnd(r_bar, sigma);
 phi = normrnd(phi_bar, sigma);
-measured_values = [z, phi];
+measured_values = [r, phi];
 
 end
